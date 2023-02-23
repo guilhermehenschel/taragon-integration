@@ -1,0 +1,27 @@
+{   
+   "name": "taragon-integration",   
+   "title": "Taragon ",   
+   "description": "Sharing data across worlds",   
+   "authors": [
+      {
+         "name": "Guilherme Henschel",
+         "url": "https://github.com/guilhermehenschel",
+         "flags": {}
+      }
+   ],
+   "version": "1.0.0",
+   "compatible":{
+      "minimum": "10",
+      "verified": "10.291",
+      "maximum": "10"
+  },
+   "packs": [
+	   {
+		   "name": "religion",
+		   "label": "Religião (Journals)",
+		   "path": "packs/religion-journals.db",
+		   "type": "JournalEntry",
+		   "module": "shared-data"
+	   }
+   ]
+}
