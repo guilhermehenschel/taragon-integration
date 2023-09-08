@@ -1,27 +1,60 @@
-{   
-   "name": "taragon-integration",   
-   "title": "Taragon ",   
-   "description": "Sharing data across worlds",   
-   "authors": [
+{
+  "title": "Taragon",
+  "description": "Sharing data across worlds",
+  "authors": [
+    {
+      "name": "Guilherme Henschel",
+      "url": "https://github.com/guilhermehenschel"
+    }
+  ],
+  "version": "1.0.0",
+  "packs": [
+    {
+      "name": "religion",
+      "label": "Religião (Journals)",
+      "path": "packs/religion-journals",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "gods",
+      "label": "Religião (Deuses)",
+      "path": "packs/gods",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "focus-spells",
+      "label": "Focus Spells",
+      "path": "packs/focus-spells",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    }
+  ],
+  "id": "taragon-integration",
+  "relationships": {
+    "systems": [
       {
-         "name": "Guilherme Henschel",
-         "url": "https://github.com/guilhermehenschel",
-         "flags": {}
+        "id": "pf2e",
+        "type": "system"
       }
-   ],
-   "version": "1.0.0",
-   "compatible":{
-      "minimum": "10",
-      "verified": "10.291",
-      "maximum": "10"
+    ]
   },
-   "packs": [
-	   {
-		   "name": "religion",
-		   "label": "Religião (Journals)",
-		   "path": "packs/religion-journals.db",
-		   "type": "JournalEntry",
-		   "module": "shared-data"
-	   }
-   ]
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.308",
+    "maximum": "11"
+  }
 }
